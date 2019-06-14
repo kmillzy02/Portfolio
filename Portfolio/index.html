@@ -2,35 +2,66 @@
 <!--
     Katelyn Miller
     created 6/12/19
-    most recent revision: 
+    most recent revision: 6/13/19
 -->
 <html lang="en">
 <head>
-    <!-- 
-        Need to add links to projects.html  contact.html     testimonials.html
-    -->
     <title>Katelyn's Portfolio</title>
+    <link href="Styles/Main.css" rel="stylesheet" type="text/css" />
+    <style>
+        caption {font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 8px;}
+
+        table, th, td {
+            border: 1px solid #0d1f2d;
+            border-collapse: collapse;
+            padding:  5px 10px;
+        }    
+        article {
+                margin-bottom: 16px;
+            }
+        
+        table{
+            width: 90%;
+            margin: auto;
+        }
+
+        tr {
+            height: 30px;
+        }
+
+        th {
+            background-color: #546a7b;
+            color: #f2eded;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #e4c3ad;
+        }
+
+        .clear-float {
+            clear:both;
+        }
+    </style>
 </head>
 
 <body>
-
     <header>  
          <h1>Portfolio for Katelyn Miller</h1>
     </header>    
     
-    <nav>  
-            <hr />
+    <nav class="border">  
             <p><a href="Projects.html">Projects</a></p>  
-            <p><a href="Contact.html">Contact</a></p>
+            <p><a href="Contact.html">Contact Me</a></p>
             <p><a href="Testimonials.html">Testimonials</a></p>
+            <div class="clear-float"></div>
     </nav>  
 
-<hr />
-
     <section>
-        <article id=about>
-            <img src="Images/IMG_1582.JPG" alt="Portrait of Katelyn Miller" style="height: 400px"/>
-            <h2> <em> <span style=color:pink>About Me </span></em></h2>
+        <article class="border" id=about>
+            <img src="Images/IMG_1582.JPG" alt="Portrait of Katelyn Miller" height="400" style="float:left;"/>
+            <h2> <em> </em></h2>
                 <p>My name is Katelyn Miller. I grew up in rural Pennsylvania and later attended college in Pittsburgh. 
                     I Studied Mathematics and Education in college and graduated wtih a <b>BS in Mathematics Education.</b> 
                     I got my first job in Virginia outside of Washington D.C. and spent 4 years teaching Algebra 1. 
@@ -48,43 +79,49 @@
                      I love most about Dallas is the amount opportunites there are to find your interests and meet people 
                      with those same interests. 
                 </p>
+            <div class="clear-float"></div>    
         </article>        
         <article id=past>
             
-            <h2> <em><span style=color:pink> Past Experiences</span></em></h2>
-            <img src="Images/bballgame.jpg" alt="teacher basketball game" style="height:400px" />
-              
+            <h2> <em> Past Experiences</span></em></h2>
+            <img src="Images/bballgame.jpg" alt="teacher basketball game" height="400" style="float:left;"/>
+            <div class="right-content">  
             <table>
                 <caption>Employment History</caption>
+                <thead>       
+                    <tr>
+                        <th>Years of empolyment</th>
+                        <th>Title</th>
+                        <th>Company</th>
+                    </tr>
+                </thead>
+               <tbody>
+                     <tr>
+                        <td>2018-present</td>
+                        <td>Math Teacher</td>
+                        <td>A Plus Secondary Academy</td>
+                    </tr>
+                
+                    <tr>
+                        <td>2017-2018</td>
+                        <td>Math Teacher</td>
+                        <td>Prestonwood Chrsitian Academy</td>
+                    </tr>
 
-                <tr>
-                    <th>Years of empolyment</th>
-                    <th>Title</th>
-                    <th>Company</th>
-                </tr>
-
-                <tr>
-                    <td>2018-present</td>
-                    <td>Math Teacher</td>
-                    <td>A Plus Secondary Academy</td>
-                </tr>
-
-                <tr>
-                    <td>2017-2018</td>
-                    <td>Math Teacher</td>
-                    <td>Prestonwood Chrsitian Academy</td>
-                </tr>
-
-                <tr>
-                    <td>2013-2017</td>
-                    <td>Math Teacher</td>
-                    <td>Culpeper County High School</td>
-                </tr>
+                    <tr>
+                        <td>2013-2017</td>
+                        <td>Math Teacher</td>
+                        <td>Culpeper County High School</td>
+                    </tr>
+                </tbody>    
             </table>
+            </div>
+            <div class="clear-float"></div>  
         </article>        
         <article id=hobbies>            
-             <h2><em><span style=color:pink>Hobbies</span></em></h2>
-             <img src="Images/ICan.jpg" alt="handletteredart" style="height:400px" />
+             <h2><em>Hobbies</span></em></h2>
+             <img src="Images/ICan.jpg" alt="handletteredart" height="400" style="float:left;" />
+            <div class="right-content">
              <ul>
                 <li> Lettering Markers</li>
                 <ol>
@@ -112,15 +149,13 @@
                     <li>Hammocking</li>
                 </ul>
             </ul> 
+            </div>
+            <div class="clear-float"></div>  
         </article>          
     </section>
 
-    
-
     <footer>
-        <hr />
         <p>&copy; 2019 Katelyn Miller. All rights reserved.</p>
     </footer>    
 </body>
-
 </html>
